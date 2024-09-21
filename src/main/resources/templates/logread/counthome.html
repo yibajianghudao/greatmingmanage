@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>LogCount</title>
+</head>
+<body>
+    <h1>将读取后的数据按照月份全部粘贴到下面的输入框</h1>
+    <form action="/logread/count" method="post">
+        <textarea name="logReadedData" rows="10" cols="30"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- <p th:text="${message}"></p> -->
+</body>
+</html>
+ 

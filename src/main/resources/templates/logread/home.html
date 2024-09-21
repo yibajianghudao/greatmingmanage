@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>LogReader</title>
+</head>
+<body>
+    <h1>打开你的log文件,将内容粘贴到下面的输入框</h1>
+    <form action="/logread/read" method="post">
+        <textarea name="logData" rows="10" cols="30"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- <p th:text="${message}"></p> -->
+</body>
+</html>
+ 
