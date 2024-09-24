@@ -7,7 +7,7 @@
     <h1>Count Log Result</h1>
     <form>
         <textarea name="oneMonth" rows="10" cols="30" th:text="${oneMonth}" ></textarea>
-        
+        <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
     </form>
     <a href="/logread/counthome">Back</a>
 </body>

@@ -6,6 +6,7 @@
 <body>
 <h1>Edit User</h1>
 <form th:action="@{/users/update/{id}(id=${user.id})}" th:object="${user}" method="post">
+    <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
     <label>Name:</label>
     <input type="text" th:field="*{name}"/>
     <label>Tag:</label>

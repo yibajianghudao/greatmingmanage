@@ -6,6 +6,7 @@
 <body>
     <h1>Read Log Result</h1>
     <form>
+        <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
         <textarea name="oneDay" rows="10" cols="30" th:text="${oneDay}" ></textarea>
         
     </form>
